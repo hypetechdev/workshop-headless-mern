@@ -1,0 +1,19 @@
+{
+    "name": "workshop-headless-mern",
+    "version": "1.0.0",
+    "author": "Marko Arsic",
+    "private": true,
+    "license": "MIT",
+    "workspaces": [
+        "frontend",
+        "backend"
+    ],
+    "scripts": {
+        "server": "yarn --cwd ./backend run start",
+        "client": "yarn --cwd ./frontend run start",
+        "dev": "concurrently -k \"yarn run server\" \"yarn run client\""
+    },
+    "dependencies": {
+        "concurrently": "^5.3.0"
+    }
+}
