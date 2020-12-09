@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+
 import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }))
 
-export default function Sidebar(props: any) {
+const Sidebar = (props: any) => {
     const classes = useStyles()
     const { archives, description, social, title } = props
 
@@ -56,3 +56,5 @@ export default function Sidebar(props: any) {
         </Grid>
     )
 }
+
+export default Sidebar

@@ -1,4 +1,5 @@
 import Axios from 'axios'
+
 import Category from 'libs/models/Category'
 
 export const fetchCategories = async () => {
